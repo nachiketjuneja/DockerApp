@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app-server:
+    image: appimage
+    ports:
+      - "8080:4200"
+    volumes:
+      - data:/data
+volumes:
+  data:
